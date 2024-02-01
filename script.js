@@ -24,7 +24,7 @@ function newQuote() {
     const quote = apiQuotes[Math.floor(Math.random() * apiQuotes.length)];
     // Check if Author field is blank and replace it with 'Unknown'
     if (!quote.author) {
-        authorText.textContent = 'Unknown'
+        authorText.textContent = 'Unknown';
     } else {
         authorText.textContext = quote.author;
     }
